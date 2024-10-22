@@ -103,7 +103,7 @@ window.onload = function() {
             
             // Vérifier si la saisie est un des mots valides
             if (validCommands.includes(inputField.value.trim().toLowerCase())) {
-                inputField.style.color = '#00FF00'; // Vert si la saisie est valide
+                inputField.style.color = '#dc61a3'; // Vert si la saisie est valide
             } else {
                 inputField.style.color = 'red'; // Rouge sinon
             }
