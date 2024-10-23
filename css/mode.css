@@ -1,0 +1,123 @@
+
+.check{
+    display: none;
+}
+.display{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(0, 0, 0);
+}
+
+.label{
+    width: 150px;
+    height: 80px;
+    border-radius: 999px;
+    background-color: #1F1F21;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5) inset;
+    cursor: pointer;
+    position: relative;
+}
+
+.circle{
+    width: 60px;
+    height: 60px;
+    border-radius: 99px;
+    background-color: #2C2C2F;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.05),
+    -10px -10px 30px rgba(0, 0, 0, 0.05) inset;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(10%, -50%);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+svg{
+    width: 30px;
+    position: absolute;
+}
+
+.sun{
+    color: #ffffff;
+    margin-top: 0%;
+    opacity: 1;
+}
+
+.moon{
+    margin-top: -150%;
+    color: #FFD600;
+    opacity: 1;
+
+}
+
+input[type=checkbox]:checked + body{
+    background-color: rgb(255, 255, 255);
+}
+input[type=checkbox]:checked + .display{
+    background-color: rgb(255, 255, 255);
+}
+input[type=checkbox]:checked + .display .label{
+
+    background: #F3F3F3;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.05) inset;
+
+}
+input[type=checkbox]:checked + .display #prompt{
+    background-color: #ffffff;
+}
+input[type=checkbox]:checked + .display span{
+    color: #000000;
+}
+input[type=checkbox]:checked + .display .label .circle{
+    left: 100%;
+    background: white;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5),
+    -10px -10px 30px rgba(0, 0, 0, 0.5) inset;
+    transform: translate(-100%, -50%);
+    
+}
+input[type=checkbox]:checked + .display .label .circle .sun{
+    margin-top: 100%;
+    opacity: 0;
+}
+input[type=checkbox]:checked + .display .label .circle .moon{
+    margin-top: 0%;
+    opacity: 1;
+}
+
+label:active .circle{
+    width: 60px;
+}
+
+/* Ajoutez ces styles dans mode.css */
+body.night-mode .display {
+    background-color: rgb(255, 255, 255);
+}
+
+body.night-mode .label {
+    background-color: #1F1F21;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5) inset;
+}
+
+body.night-mode .circle {
+    background-color: #2C2C2F;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5),
+    -10px -10px 30px rgba(0, 0, 0, 0.5) inset;
+}
+
+body.night-mode .sun {
+    margin-top: 150%;
+    opacity: 0;
+}
+
+body.night-mode .moon {
+    margin-top: 0%;
+    opacity: 1;
+}

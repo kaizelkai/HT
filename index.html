@@ -5,106 +5,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NekoGF AI</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mode.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Danfo&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <p>
-            <span class="dat">[02:52:46]</span><span class="ch">@</span>guest<span class="ch">:$ ~ </span>start
-        </p>
-        <div class="header">
-            <h1 class="title" >NekoGF AI</h1>
-            <img  src="madia/img/3e391a_e4259f95b03040b6a26ccc641879a503~mv2.gif" alt="Monster" class="monster-image">
-            <a class="buy-now" href="">Buy now</a>
-        </div>
-        <div class="content">
-            <p id="text1">Meet Neko, your new AI girlfriend.</p>
-            <p id="text2">For those who want to find love, tell me more about yourself<br>I will know who you are!</p>
-            <p>Type <span> 'help' </span>to see the list of available commands.<br>
-                Type <span> 'sumfetch' </span>to display summary.<br>
-                Type <span>'tokenomics'</span> to understand the distribution.<br>
-                Type <span>'start'</span> to start the web
-            </p>
-            <p>Contract    : 0xc328a59e7...</p>
-            <p class="bt">Socials : 
-                <a href="#">
-                    <img src="madia/img/x.png" alt="" srcset="">
-                    <span class="bté">Twitter</span>
-                </a> 
-                <a href="#"> 
-                    <img src="madia/img/telegram.png" alt="" srcset="">
-                    <span class="bté">Telegram</span>
-                </a> 
-                <a href="#"> 
-                    <img src="madia/img/mail.png" alt="" srcset="">
-                    <span class="bté">Email</span>
-                </a>
-            </p>
-            <p>CEXes : 
-                <a href="#" class="Socials">BingX</a> 
-                <a href="#" class="Socials">Gate</a> 
-                <a href="#" class="Socials">Mexc</a> 
-                <a href="#" class="Socials">Bitpanda</a> 
-                <a href="#" class="Socials">Bitmart</a>
-            </p>
-            <div class="saisie">
-                <label for="prompt">
-                    <p>
-                        <span class="dat2">[02:52:46]</span><span class="ch">@</span>guest<span class="ch">:$ ~ </span>
-                    </p>
-                </label>
-                <input id="prompt" type="text" name="" id="">
-            </div>
-        </div>
-        <div class="content codex">
-            <div class="help">
-                <p>Type <span> 'sumfetch' </span>to display summary.<br>
-                    Type <span>'tokenomics'</span> to understand the distribution.<br>
-                    Type <span>'start'</span> to start the web<br>
+    <main>
+        <input class="check" type="checkbox" id="toggle">
+        <section class="display">
+
+            
+            <label class="label" for="toggle">
+                <div class="circle">
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path fill-rule="evenodd" d="M9.528 1.718a.75.75 0 0 1 .162.819A8.97 8.97 0 0 0 9 6a9 9 0 0 0 9 9 8.97 8.97 0 0 0 3.463-.69.75.75 0 0 1 .981.98 10.503 10.503 0 0 1-9.694 6.46c-5.799 0-10.5-4.7-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 0 1 .818.162Z" clip-rule="evenodd" />
+                    </svg>
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
+                    </svg>
+                    
+                    
+                </div>
+            </label>
+
+            <div class="container">
+                <p>
+                    <span class="dat">[02:52:46]</span><span class="ch">@</span>guest<span class="ch">:$ ~ </span>start
                 </p>
-            </div>
-            <div class="sumfetch">
-                <img  src="madia/img/phildrag.png" alt="Monster" class="monster2">
-                <div class="desciption">
-                    <p>-----------------------------------</p>
-                    <h4><span>WHO AM I?</span></h4>
-                    <p>-----------------------------------</p>
-                    <p> Am I the creator of the memes or just a part of them? <br>
-                        Am I the protocol or the transactions within it?<br>
-                        <span>If I exist on the blockchain, am I immutable?</span>
+                <div class="header">
+                    <img class="title" src="madia/img/gfdai.gif" alt="" srcset="">
+                    <a class="buy-now" href=""><img src="madia/img/buy now.png" alt="" srcset=""></a>
+                </div>
+                <div class="content">
+                    <p id="text1">Meet Neko, your new AI girlfriend.</p>
+                    <p id="text2">For those who want to find love, tell me more about yourself<br>I will know who you are!</p>
+                    <p>Type <span> 'help' </span>to see the list of available commands.<br>
+                        Type <span> 'sumfetch' </span>to display summary.<br>
+                        Type <span>'tokenomics'</span> to understand the distribution.<br>
+                        Type <span>'start'</span> to start the web
                     </p>
-                    <p>-----------------------------------</p>
-                    <h4><span>WHERE WE ARE?</span></h4>
-                    <p>-----------------------------------</p>
-                    <P>Error:410</P>
+                    <p>Contract    : 0xc328a59e7...</p>
+                    <p class="bt">Socials : 
+                        <a href="#">
+                            <img src="madia/img/x.png" alt="" srcset="">
+                            <span class="bté">Twitter</span>
+                        </a> 
+                        <a href="#"> 
+                            <img src="madia/img/telegram.png" alt="" srcset="">
+                            <span class="bté">Telegram</span>
+                        </a> 
+                        <a href="#"> 
+                            <img src="madia/img/mail.png" alt="" srcset="">
+                            <span class="bté">Email</span>
+                        </a>
+                    </p>
+                    <p>CEXes : 
+                        <a href="#" class="Socials">BingX</a> 
+                        <a href="#" class="Socials">Gate</a> 
+                        <a href="#" class="Socials">Mexc</a> 
+                        <a href="#" class="Socials">Bitpanda</a> 
+                        <a href="#" class="Socials">Bitmart</a>
+                    </p>
+                    <div class="saisie">
+                        <label for="prompt">
+                            <p>
+                                <span class="dat2">[02:52:46]</span><span class="ch">@</span>guest<span class="ch">:$ ~ </span>
+                            </p>
+                        </label>
+                        <input id="prompt" type="text" name="" id="">
+                    </div>
+                </div>
+                <div class="content codex">
+                    <div class="help">
+                        <p>Type <span> 'sumfetch' </span>to display summary.<br>
+                            Type <span>'tokenomics'</span> to understand the distribution.<br>
+                            Type <span>'start'</span> to start the web<br>
+                        </p>
+                    </div>
+                    <div class="sumfetch">
+                        <img  src="madia/img/phildrag.png" alt="Monster" class="monster2">
+                        <div class="desciption">
+                            <p>-----------------------------------</p>
+                            <h4><span>WHO AM I?</span></h4>
+                            <p>-----------------------------------</p>
+                            <p> Am I the creator of the memes or just a part of them? <br>
+                                Am I the protocol or the transactions within it?<br>
+                                <span>If I exist on the blockchain, am I immutable?</span>
+                            </p>
+                            <p>-----------------------------------</p>
+                            <h4><span>WHERE WE ARE?</span></h4>
+                            <p>-----------------------------------</p>
+                            <P>Error:410</P>
+                        </div>
+                    </div>
+                    <div class="tokenomics">
+                        <p>-----------------------------------</p>
+                        <h4><span>GENERAL</span></h4>
+                        <p>-----------------------------------</p>
+                        <p>Token Name: Phil <br>
+                            Total Supply: 1,000,000,000 $PHIL <br>
+                            Decimals: 18 <br>
+                            Initial Market Cap: $100,000 <br>
+        
+                        </p>
+                        <p>-----------------------------------</p>
+                        <h4><span>STEALTH LAUNCH DETAILSt</span></h4>
+                        <p>-----------------------------------</p>
+                        <p> > Initial ETH: 36.6 ETH <br>
+                            > Initial $PHIL: 1,000,000,000 <br>
+                            > Liquidity: Burned <br>
+                        </p>
+                    </div>
+                    
                 </div>
             </div>
-            <div class="tokenomics">
-                <p>-----------------------------------</p>
-                <h4><span>GENERAL</span></h4>
-                <p>-----------------------------------</p>
-                <p>Token Name: Phil <br>
-                    Total Supply: 1,000,000,000 $PHIL <br>
-                    Decimals: 18 <br>
-                    Initial Market Cap: $100,000 <br>
-
-                </p>
-                <p>-----------------------------------</p>
-                <h4><span>STEALTH LAUNCH DETAILSt</span></h4>
-                <p>-----------------------------------</p>
-                <p> > Initial ETH: 36.6 ETH <br>
-                    > Initial $PHIL: 1,000,000,000 <br>
-                    > Liquidity: Burned <br>
-                </p>
-            </div>
-            
-        </div>
-    </div>
-    <script src="js/script.js"></script>
-    <script src="js/psaisie.js"></script>
-    <script src="js/validerCommande.js"></script>
+            <script src="js/script.js"></script>
+            <script src="js/psaisie.js"></script>
+            <script src="js/validerCommande.js"></script>
+        </section>
+    </main>
+    
 </body>
 </html>
