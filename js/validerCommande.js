@@ -1,11 +1,3 @@
-// Fonction pour appliquer le style à l'image avec la classe .monster2-image
-function applyMonsterImageStyle() {
-    const monsterImage = document.querySelector('.monster2'); // Sélectionne le premier élément
-    if (monsterImage) {
-        monsterImage.style.width = '40%'; // Appliquer la largeur
-        monsterImage.style.height = 'auto'; // Appliquer la hauteur
-    }
-}
 
 window.onload = function() {
     updateTime();
@@ -40,11 +32,9 @@ window.onload = function() {
                 sectionToDisplay = document.querySelector('.help');
                 sectionToDisplay.style.display = 'flex';
                 break;
-            case 'sumfetch':
-                sectionToDisplay = document.querySelector('.sumfetch');
+            case 'chat':
+                sectionToDisplay = document.querySelector('.chat');
                 sectionToDisplay.style.display = 'flex';
-                sectionToDisplay.style.flexWrap = 'wrap-reverse';
-                applyMonsterImageStyle(); // Appeler la fonction pour appliquer le style
                 break;
             case 'tokenomics':
                 sectionToDisplay = document.querySelector('.tokenomics');
@@ -98,7 +88,7 @@ window.onload = function() {
 
         // Écouter les changements de saisie dans le nouveau prompt
         newPrompt.addEventListener('input', function() {
-            const validCommands = ['help', 'sumfetch', 'tokenomics', 'start', 'analytic'];
+            const validCommands = ['help', 'chat', 'tokenomics', 'start', 'analytic'];
             const inputField = this;
             
             // Vérifier si la saisie est un des mots valides

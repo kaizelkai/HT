@@ -1,6 +1,3 @@
-document.querySelector('.buy-now').addEventListener('click', () => {
-    alert('Redirecting to buy page...');
-});
 
 
 // Fonction pour mettre à jour l'heure réelle
@@ -32,7 +29,7 @@ window.onload = function() {
 
 
 document.getElementById('prompt').addEventListener('input', function() {
-    const validCommands = ['help', 'sumfetch', 'tokenomics', 'start','analytic'];
+    const validCommands = ['help', 'chat', 'tokenomics', 'start','analytic'];
     const inputField = this;
     
     // Vérifier si la saisie est un des mots valides
