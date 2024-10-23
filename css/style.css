@@ -3,7 +3,7 @@
     body {
         background-color: white;
         color: #dc61a3;
-        font-family: 'Dancing Script', Courier, monospace;
+        font-family: 'Courier Prime', monospace;;
         height: 100vh;
         margin: 0;
         font-size: 16px;
@@ -71,7 +71,6 @@ input {
     border: none;
     outline: none; /* Supprime le contour par défaut */
     color: #dc61a3; /* Couleur du texte */
-    font-family: 'Courier New', Courier, monospace;
     font-size: 1em;
 }
 
@@ -83,7 +82,7 @@ input:focus {
 }
 
 .title{
-    width: 25%;
+    width: 20%;
     margin-top: -8%;
 }
 
